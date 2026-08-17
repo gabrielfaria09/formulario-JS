@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Tudo certo no seu cadastro!</h1>
+    <h1 id="sucesso">Tudo certo!</h1>
+
+    <p id="complemento"></p>
+
+    <script>
+        const complemento = document.getElementById("complemento");
+
+        setTimeout(  function(){
+            complemento.textContent = "Seu cadastro foi efetudado com sucesso. Você pode fechar esta janela."
+        },2000)
+    </script>
 </body>
 </html>

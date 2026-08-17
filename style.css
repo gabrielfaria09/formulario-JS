@@ -116,3 +116,36 @@ button:hover {
 button:active {
     transform: translateY(0);
 }
+
+/*Mensagem de erro*/
+
+#error{
+    color: darkred;
+    margin: 1.5rem;
+    letter-spacing: 0.3 rem;
+}
+
+/*Mensagem de sucesso*/
+
+#sucesso{
+    color: darkgreen;
+    letter-spacing: 0.5rem;
+    border-right: 4px solid;
+    width: 19ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 1s steps(11), blinking 0.2s infinite step-end alternate;
+}
+
+@keyframes typing{
+    from{
+        width: 0;
+
+    }
+}
+
+@keyframes blinking{
+    50%{
+        border-color: transparent;
+    }
+}
